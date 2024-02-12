@@ -47,7 +47,7 @@ export default function Home() {
     const data = new FormData(e.currentTarget);
     const email = data.get('email');
     const password = data.get('password');
-    runDBCallAsync(`http://localhost:3000/api/login?email=${email}&pass=${password}`);
+    runDBCallAsync(`api/login?email=${email}&pass=${password}`);
   };
 
   return (
